@@ -1,0 +1,23 @@
+ul {
+  display: flex;
+  background-color: hotpink;
+}
+
+li {
+  color: antiquewhite;
+  text-shadow: 0.2rem;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+ul.column {
+  flex-direction: column;
+  align-content: flex-start;
+  float: left;
+  padding: 0 0.75rem;
+  & li {
+    color: red;
+    margin: 0, 0, 0, 0;
+    flex-basis: content;
+  }
+}
