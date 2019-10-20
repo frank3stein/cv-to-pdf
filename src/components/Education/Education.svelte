@@ -4,21 +4,18 @@
     {
       school: "Rotterdam School of Management, Erasmus University",
       degrees: [
-        "MSc, Marketing Management",
-        "MSc, Innovation Management",
-        "MSc, General Management"
+        "MSc, Marketing Management ",
+        "MSc, Innovation Management ",
+        "MSc, General Management "
       ]
     },
     {
       school: "Koc University (Full Scholarship), Istanbul Turkey",
-      degrees: ["Bachelor, Physics"]
+      degrees: ["Bachelor of Physics"]
     }
   ];
 </script>
 <style>
-  li {
-    font-size: 1em;
-  }
 </style>
 <h2>Education</h2>
 {#each education as school}

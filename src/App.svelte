@@ -1,3 +1,21 @@
+<style>
+  article {
+  margin-top: 20px;
+  margin-bottom:20px;
+  width: 210mm;
+  height: 296mm;
+  box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3);
+  page-break-after: always;
+  background-color: seashell;
+  padding:1rem;
+  }
+  h1 {
+    background-color: yellow;
+  }
+  p {
+    background-color:var(--main-color);
+  }
+</style>
 <script>
   import Header from './components/Header/Header.svelte';
   import Skills from './components/Skills/Skills.svelte';
@@ -14,16 +32,3 @@
   <Projects/>
   <Education/>
 </article>
-<style>
-  article {
-    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
-    page-break-after: always;
-    background-color: seashell;
-  }
-  h1 {
-    background-color: yellow;
-  }
-  p {
-    background-color:var(--main-color);
-  }
-</style>

@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const postcss = require("postcss");
 
 module.exports = {
   entry: "./src/index.js",
@@ -28,7 +27,7 @@ module.exports = {
                     require("postcss-preset-env")({
                       // stage: 0,
                       features: { "nesting-rules": true },
-                      browsers: "last 10 versions"
+                      browsers: "last 2 versions"
                     }),
                     require("cssnano")()
                   ]

@@ -2,25 +2,6 @@
   import "./Contact.css";
 </script>
 <style>
-  section {
-    border-style: solid;
-    border-color: red;
-  }
-  h2 {
-    text-align: center;
-    background-color: seashell;
-  }
-  nav {
-    margin: 0;
-    padding: 0;
-    background-color: seashell;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    & li {
-      color: red;
-    }
-  }
 </style>
 <section>
   <h2>Contact Information:</h2>

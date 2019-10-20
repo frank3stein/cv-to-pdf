@@ -1,4 +1,5 @@
 <script>
+  import './Projects.css';
   let projects = [
     {
       title: "Neighbourhood Project - https://bit.ly/2PiNPxx",

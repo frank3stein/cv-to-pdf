@@ -1,5 +1,5 @@
 <script>
-  import "./Skills.css";
+  // import "./Skills.css";
   const skills = ["JavaScript", "CSS", "HTML", "Webpack", "React", "Vue"];
   let column = false;
   const clickHandler = e => {
@@ -7,7 +7,8 @@
     column = !column;
   };
 </script>
-<style></style>
+<style>
+</style>
 <article>
   <ul class:column on:click="{clickHandler}">
     {#each skills as skill}
