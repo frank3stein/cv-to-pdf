@@ -24,6 +24,7 @@
   import Projects from './components/Projects/Projects.svelte';
   import Education from './components/Education/Education.svelte';
   import Certifications from './components/Certifications/Certifications.svelte';
+  document.title = "Emil Martinov - CV";
 </script>
 <article>
   <Header/>
