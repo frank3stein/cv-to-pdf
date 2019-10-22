@@ -1,23 +1,26 @@
 ul {
     display: flex;
     background-color: hotpink;
-  }
+        & li {
+        color: antiquewhite;
+        text-shadow: 0.2rem;
+        font-size: 2rem;
+        margin: 0, 0, 0, 0;
+        }
 
-  li {
-    color: antiquewhite;
-    text-shadow: 0.2rem;
-    display: inline-block;
-    font-size: 2rem;
-  }
+        & li:hover {
+            color:blueviolet;
+            & span {
+                visibility: visible;
+            }
+        }    
+}
 
-  ul.column {
+
+ul.column {
     flex-direction: column;
     align-content: flex-start;
     float: left;
     padding: 0 0.75rem;
-    & li {
-      color: yellow;
-      margin: 0, 0, 0, 0;
-      flex-basis: content;
-    }
-  }
+    margin-right:.5rem;
+}

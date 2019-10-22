@@ -1,6 +1,6 @@
 <script>
-import './Header.css';
 </script>
 <style>
+  @import './Header.css';
 </style>
 <h1>Emil Martinov</h1>

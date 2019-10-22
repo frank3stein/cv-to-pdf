@@ -1,28 +1,35 @@
 <script>
-  import "./Contact.css";
+  const Contact = [
+    {
+      name:"martinov.emil@gmail.com",
+      link:"mailto:martinov.emil@gmail.com"
+    },
+    {
+      name:"@emilmartinov",
+      link:"https://www.twitter.com/emilmartinov"
+    },
+    {
+      name:"github/frank3stein",
+      link:"https://github.com/frank3stein/"
+    },
+    {
+      name:"linkedin.com/in/emilmartinov",
+      link:"https://www.linkedin.com/in/emilmartinov"
+    }
+  ]
 </script>
 <style>
+  @import './Contact.css';
 </style>
 <section>
-  <h2>Contact Information:</h2>
+  <article><a href="tel:+31634336711"># +31 6 343 36 711</a></article>
   <nav>
+    {#each Contact as contact}
     <li>
-      <a href="mailto:martinov.emil@gmail.com" target="_blank"
-        >martinov.emil@gmail.com</a
+      <a href={contact.link} target="_blank"
+        >{contact.name}</a
       >
     </li>
-    <li>
-      <a href="https://www.twitter.com/emilmartinov" target="_blank"
-        >@emilmartinov</a
-      >
-    </li>
-    <li>
-      <a href="https://github.com/frank3stein/" target="_blank">github</a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/emilmartinov" target="_blank"
-        >linkedin.com/in/emilmartinov</a
-      >
-    </li>
+    {/each}
   </nav>
 </section>

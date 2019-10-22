@@ -1,12 +1,17 @@
 section {
     border-style: solid;
     border-color: red;
-  }
-  h2 {
+}
+h2 {
     text-align: center;
     background-color: seashell;
-  }
-  nav {
+}
+
+article {
+    text-align: center;
+}
+
+nav {
     margin: 0;
     padding: 0;
     background-color: seashell;
@@ -14,6 +19,11 @@ section {
     flex-wrap: wrap;
     justify-content: space-between;
     & li {
-      background-color: red;
+      margin: .2rem 0;
+      /* background-color: red; */
+      & :hover {
+          color: white;
+          background-color:blue;
+      }
     }
-  }
+}

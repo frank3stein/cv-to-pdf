@@ -1,6 +1,12 @@
 const path = require("path");
+const glob = require("glob");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const PurgecssPlugin = require('purgecss-webpack-plugin')
+
+const PATHS = {
+  src: path.resolve(__dirname, 'dist')
+}
 
 module.exports = {
   entry: "./src/index.js",
@@ -23,10 +29,13 @@ module.exports = {
                 postcss: true,
                 postcss: {
                   plugins: [
-                    require("postcss-import")({}),
+                    require("postcss-import")({}), // need it to import css files into svelte documents
                     require("postcss-preset-env")({
                       // stage: 0,
-                      features: { "nesting-rules": true },
+                      features: { 
+                        "nesting-rules": true,
+                        "custom-properties":true
+                      },
                       browsers: "last 2 versions"
                     }),
                     require("cssnano")()
@@ -64,5 +73,11 @@ module.exports = {
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin(), new ExtractTextPlugin("styles.css")]
+  plugins: [
+    new HtmlWebpackPlugin(), 
+    new ExtractTextPlugin("styles.css"), 
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/*`)
+    }),
+  ]
 };

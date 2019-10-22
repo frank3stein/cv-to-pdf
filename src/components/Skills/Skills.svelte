@@ -1,6 +1,6 @@
 <script>
-  // import "./Skills.css";
-  const skills = ["JavaScript", "CSS", "HTML", "Webpack", "React", "Vue"];
+  // import Tooltip from '../Tooltip/Tooltip.svelte';
+  const skills = ["JavaScript", "CSS", "HTML", "Webpack", "React", "Node"];
   let column = false;
   const clickHandler = e => {
     e.stopPropagation();
@@ -8,11 +8,12 @@
   };
 </script>
 <style>
+@import './Skills.css';
 </style>
 <article>
   <ul class:column on:click="{clickHandler}">
     {#each skills as skill}
-    <li>{skill}</li>
+    <li class='tooltip'>{skill}</li>
     {/each}
   </ul>
 </article>

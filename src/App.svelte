@@ -21,8 +21,9 @@
   import Skills from './components/Skills/Skills.svelte';
   import Contact from './components/Contact/Contact.svelte';
   import Workxp from './components/WorkXP/WorkXP.svelte';
-  import Projects from './components/Projects/Projects.svelte'
-  import Education from './components/Education/Education.svelte'
+  import Projects from './components/Projects/Projects.svelte';
+  import Education from './components/Education/Education.svelte';
+  import Certifications from './components/Certifications/Certifications.svelte';
 </script>
 <article>
   <Header/>
@@ -31,4 +32,5 @@
   <Workxp/>
   <Projects/>
   <Education/>
+  <Certifications/>
 </article>

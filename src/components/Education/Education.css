@@ -2,7 +2,17 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    --heading-margin : 0.7rem;
+    margin-top: var(--heading-margin);
+    margin-bottom: var(--heading-margin);
+}
+
+h3:nth-last-of-type(1){
+    margin-top: 1.5rem;
+}
+
 li {
-font-size: 1em;
-color: blue;
+    font-size: 1em;
+    color: blue;
 }
