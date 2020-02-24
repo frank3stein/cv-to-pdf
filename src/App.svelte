@@ -24,14 +24,15 @@
   import Projects from './components/Projects/Projects.svelte';
   import Education from './components/Education/Education.svelte';
   import Certifications from './components/Certifications/Certifications.svelte';
+  import { name, skills, contact, workxp, projects, education, certifications } from './info.json';
   document.title = "Emil Martinov - CV";
 </script>
 <article>
-  <Header/>
-  <Contact/>
-  <Skills/>
-  <Workxp/>
-  <Projects/>
-  <Education/>
-  <Certifications/>
+  <Header name = {name}/>
+  <Contact contact = {contact}/>
+  <Skills skills = {skills}/>
+  <Workxp workxp = {workxp}/>
+  <Projects projects = {projects}/>
+  <Education education = {education}/>
+  <Certifications certifications = {certifications}/>
 </article>

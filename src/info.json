@@ -1,0 +1,96 @@
+{
+    "name": "Emil Martinov",
+    "contact": [
+        {
+          "name": "martinov.emil@gmail.com",
+          "link": "mailto:martinov.emil@gmail.com"
+        },
+        {
+          "name": "@emilmartinov",
+          "link": "https://www.twitter.com/emilmartinov"
+        },
+        {
+          "name": "github/frank3stein",
+          "link": "https://github.com/frank3stein/"
+        },
+        {
+          "name": "linkedin.com/in/emilmartinov",
+          "link": "https://www.linkedin.com/in/emilmartinov"
+        }
+    ],
+    "skills": ["JavaScript", "CSS", "HTML", "Webpack", "React", "Node"],
+    "workxp": [
+        {
+            "title": "Mentor for Cloud Developer, Udacity",
+            "beginningDate": "June 2019",
+            "endDate": "",
+            "text": "Cloud Developer program is designed to take the student from basics like how to host a website on S3 with Cloudfront CDN, spinning up ElasticBeanstalk web app that scales by compute resource needs or traffic. The students also migrate a monolith app to a microservice architecture using AWS. Lastly, the students are guided to tap into the power of serverless."
+        },
+        {
+            "title": "Mentor for Frontend Web Development, Udacity",
+            "beginningDate": "May 2018",
+            "endDate": "",
+                "text":
+            "Udacity is an online education platform which partners with companies like Google, Facebook, Github, Amazon and IBM to bring industry standard education programs to prepare candidates to the job market. I work as a reviewer and mentor to enable students grow into their job roles. I have reviewed hundreds of projects, with an average of 4.92 out of 5 as student feedback."
+        }
+    ],
+    "projects": [
+        {
+          "title":"Serverless Todo App",
+          "link":"https://github.com/frank3stein/serverless",
+          "text":"A react todo app. The backend is deployed using Serverless and Cloudformation template. I used OAuth for authentication and DynamoDB for the database. You can also upload images to the app, which is uplaoded to an S3 bucket, with a presigned URL."
+        },
+        {
+          "title": "Neighbourhood Project",
+          "link":"https://bit.ly/2PiNPxx",
+          "text":
+            "I have used YELP API to pull information about pizzerias around Sydney. The results were shown as pins on google maps. You can change the search query and the results update. The location can be updated as well, the modularity exists, but I didn’t add it to view. Lately in order learn/try Vue, I have updated the project to Vue.js and used webpack to bundle it."
+        },
+        {
+          "title": "Interactive Resume",
+          "link":"https://frank3stein.github.io/cv-to-pdf/",
+          "text":
+            "This CV was made using Svelte. I modularized each section and separated the css from svelte components, so css can be edited individually. I used the opportunity to update my cv to learn some Svelte."
+        }
+    ],
+    "education": [
+        {
+          "school": "Rotterdam School of Management, Erasmus University",
+          "degrees": [
+          {
+            "name":"MSc, Marketing Management ",
+            "link":"https://www.rsm.nl/master/msc-programmes/msc-marketing-management/overview/"
+          },
+          {
+            "name":"MSc, Innovation Management ",
+            "link":"https://www.rsm.nl/master/msc-programmes/msc-management-of-innovation/overview/"
+          },  
+          {
+            "name": "MSc, General Management (Renamed, Management) ",
+            "link":"https://www.rsm.nl/master/msc-programmes/mscba-master-in-management/overview/"
+          } 
+          ]
+        },
+        {
+          "school": "Koc University (Full Scholarship), Istanbul Turkey",
+          "degrees": [
+            {
+            "name":"Bachelor of Physics", 
+            "link":"https://science.ku.edu.tr/en/departments/physics/about/"
+            }
+          ]
+        }
+      ],
+
+      "certifications": [
+        {
+            "name":"Udacity Digital Marketing Nanodegree",
+            "link":"https://www.udacity.com/course/digital-marketing-nanodegree--nd018"
+        },
+        {
+            "name":"Udacity Frontend Developer Nanodegree",
+            "link":"https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011"
+        }
+    ]
+
+}

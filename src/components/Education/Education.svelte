@@ -1,27 +1,5 @@
 <script>
-  let education = [
-    {
-      school: "Rotterdam School of Management, Erasmus University",
-      degrees: [
-      {
-        name:"MSc, Marketing Management ",
-        link:"https://www.rsm.nl/master/msc-programmes/msc-marketing-management/overview/"
-      },
-      {
-        name:"MSc, Innovation Management ",
-        link:"https://www.rsm.nl/master/msc-programmes/msc-management-of-innovation/overview/"
-      },  
-      {
-        name: "MSc, General Management (Renamed, Management) ",
-        link:"https://www.rsm.nl/master/msc-programmes/mscba-master-in-management/overview/"
-      } 
-      ]
-    },
-    {
-      school: "Koc University (Full Scholarship), Istanbul Turkey",
-      degrees: [{name:"Bachelor of Physics", link:"https://science.ku.edu.tr/en/departments/physics/about/"}]
-    }
-  ];
+export let education;
 </script>
 <style>
     @import "./Education.css";

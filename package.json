@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
     "build": "webpack",
-    "deploy":"webpack && gh-pages -d dist"
+    "deploy": "webpack && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -16,19 +16,19 @@
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^3.2.0",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
     "purgecss-webpack-plugin": "^1.6.0",
     "style-loader": "^0.23.1",
-    "svelte": "^3.12.1",
+    "svelte": "^3.19.1",
     "svelte-loader": "^2.13.6",
     "svelte-preprocess": "^2.16.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.2"
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {}
 }

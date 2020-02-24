@@ -1,6 +1,7 @@
 <script>
+  export let name;
 </script>
 <style>
   @import './Header.css';
 </style>
-<h1>Emil Martinov</h1>
+<h1>{name}</h1>

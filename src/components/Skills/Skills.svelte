@@ -1,6 +1,5 @@
 <script>
-  // import Tooltip from '../Tooltip/Tooltip.svelte';
-  const skills = ["JavaScript", "CSS", "HTML", "Webpack", "React", "Node"];
+  export let skills;
   let column = false;
   const clickHandler = e => {
     e.stopPropagation();
