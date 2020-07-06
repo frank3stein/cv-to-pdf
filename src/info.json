@@ -18,33 +18,44 @@
           "link": "https://www.linkedin.com/in/emilmartinov"
         }
     ],
-    "skills": ["JavaScript", "CSS", "HTML", "Webpack", "React", "Node"],
+    "skills": ["HTML","CSS", "JavaScript", "Node", "React", "AWS"],
     "workxp": [
-        {
-            "title": "Mentor for Cloud Developer, Udacity",
-            "beginningDate": "June 2019",
-            "endDate": "",
-            "text": "Cloud Developer program is designed to take the student from basics like how to host a website on S3 with Cloudfront CDN, spinning up ElasticBeanstalk web app that scales by compute resource needs or traffic. The students also migrate a monolith app to a microservice architecture using AWS. Lastly, the students are guided to tap into the power of serverless."
-        },
-        {
-            "title": "Mentor for Frontend Web Development, Udacity",
-            "beginningDate": "May 2018",
-            "endDate": "",
-                "text":
-            "Udacity is an online education platform which partners with companies like Google, Facebook, Github, Amazon and IBM to bring industry standard education programs to prepare candidates to the job market. I work as a reviewer and mentor to enable students grow into their job roles. I have reviewed hundreds of projects, with an average of 4.92 out of 5 as student feedback."
-        }
+      {
+        "title": "Mentor at Udacity, Frontend, React, Cloud and Devops (AWS) Nanodegrees",
+        "beginningDate":"May 2018",
+        "endDate": "",
+        "text": [
+          "Udacity is an online education platform which partners with companies like Google, Facebook, Github, Amazon and IBM to bring industry standard education programs to prepare candidates for the job market.", 
+          
+          "Reviewed thousands of projects consistently rating high on  performance metrics, review rating (>4.9/5), avg project review turnaround time (<1hour/8hours).",
+
+          "Resolved hundreds of issues on Javascript, React/Redux, AWS, helping students on their learning journey teaching the what, how and why.",
+
+          "Assessed degrees pre-launch, which involved catching bugs in projects, error in content and giving feedback on the student journey. At the moment(July, 2020), I am assessing Intermediate Javascript, Azure Cloud and Azure Devops Beta degrees. On launch I will be mentoring the degrees."
+        ]
+      }
     ],
     "projects": [
         {
           "title":"Serverless Todo App",
           "link":"https://github.com/frank3stein/serverless",
-          "text":"A react todo app. The backend is deployed using Serverless and Cloudformation template. I used OAuth for authentication and DynamoDB for the database. You can also upload images to the app, which is uplaoded to an S3 bucket, with a presigned URL."
+          "text":"A react todo app. The backend is deployed using Serverless and Cloudformation template. I used OAuth for authentication and DynamoDB for the database.Images are uploaded to S3 bucket with a presigned URL. Implemented warmup (reducing latency on cold start), request validation (reducing costs), canary deployment and xray. Please refer to readme for full functionality."
         },
+        {
+          "title":"Refactor Monolith to Microservices",
+          "link":"https://github.com/frank3stein/microservices-walkthrough",
+          "text":"Refactored a monolith into microservices by leveraging docker containers and kubernetes cluster. The backend is seperated into 2 services, served by a reverseproxy at the same port. Each service can scale independently through replica sets."
+        },
+        {
+          "title":"Would you Rather",
+          "link":"https://github.com/frank3stein/would-you-rather",
+          "text":"Implemented 'would you rather game' in react/redux. I used this project to learn redux and react-redux by implementing the hooks api in React framework. "
+        },  
         {
           "title": "Neighbourhood Project",
           "link":"https://bit.ly/2PiNPxx",
           "text":
-            "I have used YELP API to pull information about pizzerias around Sydney. The results were shown as pins on google maps. You can change the search query and the results update. The location can be updated as well, the modularity exists, but I didn’t add it to view. Lately in order learn/try Vue, I have updated the project to Vue.js and used webpack to bundle it."
+            "Leveraged Yelp API to pull information about pizzerias around Sydney using Google Maps as the canvas. You can change the search query and the results update. The location can be updated as well, the modularity exists, but I didn’t add it to view. In order learn/try Vue, I have refactored the project to Vue.js from Knockout.js and used webpack to bundle it."
         },
         {
           "title": "Interactive Resume",
@@ -75,7 +86,7 @@
           "school": "Koc University (Full Scholarship), Istanbul Turkey",
           "degrees": [
             {
-            "name":"Bachelor of Physics", 
+            "name":"Bachelor of Physics (Full Scholarship)", 
             "link":"https://science.ku.edu.tr/en/departments/physics/about/"
             }
           ]
@@ -91,6 +102,14 @@
             "name":"Udacity Frontend Developer Nanodegree",
             "link":"https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011"
         }
-    ]
+    ],
+    "continiousEducation": [
+      {
+      "name": "Frontendmasters",
+      "link": "https://frontendmasters.com/"
+    }, {
+      "name": "Egghead.io",
+      "link": "https://egghead.io/"
+    }]
 
 }

@@ -1,5 +1,5 @@
 <style>
-    @import './Certifications.css';
+    /* @import './Certifications.css'; */
 </style>
 <script>
     export let certifications;

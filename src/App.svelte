@@ -34,5 +34,5 @@
   <Workxp workxp = {workxp}/>
   <Projects projects = {projects}/>
   <Education education = {education}/>
-  <Certifications certifications = {certifications}/>
+  <!-- <Certifications certifications = {certifications}/> -->
 </article>
