@@ -54,12 +54,6 @@
           "link":"https://frank3stein.github.io/fnd-project5/dist/",
           "text":
             "Leveraged Yelp API to pull information about pizzerias around Sydney using Google Maps as the canvas. You can change the search query and the results update. The location can be updated as well, the modularity exists, but I didn’t add it to view. In order learn/try Vue, I have refactored the project to Vue.js from Knockout.js and used webpack to bundle it."
-        },
-        {
-          "title": "Waterborn Bali Surf School",
-          "link":"https://github.com/frank3stein/Reactborn",
-          "text":
-            "A high performance commercial site built with Gatsby/React (Lighthouse scores and Livesite url in Readme). Used formik to create contact form with google captcha bot filtering. The site is deployed to edge CDN on AWS."
         }
     ],
     "education": [
