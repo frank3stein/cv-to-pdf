@@ -32,9 +32,9 @@ module.exports = {
                     require("postcss-import")({}), // need it to import css files into svelte documents
                     require("postcss-preset-env")({
                       // stage: 0,
-                      features: { 
+                      features: {
                         "nesting-rules": true,
-                        "custom-properties":true
+                        "custom-properties": true
                       },
                       browsers: "last 2 versions"
                     }),
@@ -74,10 +74,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin(), 
-    new ExtractTextPlugin("styles.css"), 
-    new PurgecssPlugin({
-      paths: glob.sync(`${PATHS.src}/*`)
-    }),
+    new HtmlWebpackPlugin(),
+    new ExtractTextPlugin("styles.css"),
+    // new PurgecssPlugin({
+    //   paths: glob.sync(`${PATHS.src}/*`)
+    // }),
   ]
 };
