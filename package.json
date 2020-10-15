@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@icons-pack/svelte-simple-icons": "^1.5.0",
+    "@icons-pack/svelte-simple-icons": "^1.9.1",
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
@@ -24,15 +24,15 @@
     "postcss-preset-env": "^6.7.0",
     "purgecss-webpack-plugin": "^1.6.0",
     "style-loader": "^0.23.1",
-    "svelte": "^3.23.2",
+    "svelte": "^3.29.0",
     "svelte-loader": "^2.13.6",
     "svelte-preprocess": "^2.16.0",
-    "webpack": "^4.43.0",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "puppeteer": "^5.0.0"
+    "puppeteer": "^5.3.1"
   }
 }
