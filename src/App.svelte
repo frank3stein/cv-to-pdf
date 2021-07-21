@@ -29,11 +29,11 @@
   document.title = "Emil Martinov - CV";
 </script>
 <article>
-  <Header name = {name}/>
-  <Contact contact = {contact}/>
-  <Skills skills = {skills}/>
-  <Workxp workxp = {workxp}/>
-  <Projects projects = {projects}/>
-  <Education education = {education}/>
-  <!-- <Certifications certifications = {certifications}/> -->
+  <Header {name} />
+  <Contact {contact} />
+  <Skills {skills}/>
+  <Workxp {workxp} />
+  <Projects {projects} />
+  <Education {education} />
+  <Certifications {certifications} />
 </article>

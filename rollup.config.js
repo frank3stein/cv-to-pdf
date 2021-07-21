@@ -63,31 +63,63 @@ export default {
 				dev: !production
 			},
 
-			// preprocess: sveltePreprocess({
-			// 	sourceMap: !production,
-			// 	// postcss: true
-			// 	postcss: {
-			// 		plugins: [
-			// 			require('postcss-import')({}),
-			// 			require('postcss-preset-env')({
-			// 				// stage: 0,
-			// 				features: {
-			// 				"nesting-rules": true,
-			// 				"custom-properties": true
-			// 				},
-			// 				browsers: "last 2 versions"
-			// 			}),
-			// 			require('cssnano')()
-			// 		]
-			// 	}
-			// }),
-
-
 			preprocess: sveltePreprocess({
-				postcss: { plugins: [postCssImport(), cssEnv()] },
-				configFilePath: 'postcss.config.js'
-			  }),
+				sourceMap: !production,
+				// postcss: true
+				postcss: {
+					plugins: [
+						require('postcss-import')({}),
+						require('postcss-preset-env')({
+							// stage: 0,
+							features: {
+							"nesting-rules": true,
+							"custom-properties": true
+							},
+							browsers: "last 2 versions"
+						}),
+						require('cssnano')()
+					]
+				}
+			}),
 
+
+			// preprocess: sveltePreprocess({
+			// 	// postcss: true,
+			// 	postcss: { plugins: [postCssImport(), cssEnv({
+			// 		stage: 0,
+			// 		features: {
+			// 		  "nesting-rules": true,
+			// 		  "custom-properties": true
+			// 		},
+			// 		browsers: "last 2 versions"
+			// 	  })] },
+			// 	configFilePath: 'postcss.config.js'
+			//   }),
+
+			// working preprocess
+			// preprocess: {
+			// 	style: ({ content, attributes }) => {
+			// 		if (attributes.type !== 'text/postcss') {
+			// 			return;
+			// 		};
+				
+			// 		// Plugins List: 
+			// 		// https://github.com/postcss/postcss/blob/master/docs/plugins.md
+			// 		const plugins = [
+			// 			require('postcss-import'),
+			// 			require('postcss-preset-env')
+			// 		];
+			// 		return postcss(plugins)
+			// 			.process(content, { 
+			// 				from: 'src', 
+			// 				map: { inline: false } 
+			// 			})
+			// 			.then((result) => ({
+			// 				code: result.css.toString(),
+			// 				map: result.map.toString()
+			// 			}));
+			// 	}
+			// },
 
 			// preprocess:[
 			// 	postcss({
@@ -121,7 +153,7 @@ export default {
 
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
-		// css({ output: 'bundle.css' }),
+		css({ output: 'bundle.css' }),
 
 
 
