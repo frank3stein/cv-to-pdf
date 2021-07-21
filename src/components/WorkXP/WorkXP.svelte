@@ -4,7 +4,6 @@
 </script>
 <style>
 @import './WorkXP.css';
-
 li {
   list-style-type: disc;
   list-style-position: inside;
