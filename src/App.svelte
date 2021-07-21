@@ -26,7 +26,14 @@
   import Certifications from './components/Certifications/Certifications.svelte';
   import { name, skills, contact, workxp, projects, education, certifications } from './info.json';
   document.title = "Emil Martinov - CV";
+  // export let data;
+  // async function init() {
+  //   data = await fetch('./info.json').then(res => res.json())
+  //   const header = new Header({ name, skills, contact, workxp, projects, education, certifications });   
+  // }
+  // init()
 </script>
+<p>Test</p>
 <article>
   <Header name = {name}/>
   <Contact contact = {contact}/>
