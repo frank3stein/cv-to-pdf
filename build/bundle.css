@@ -1,0 +1,42 @@
+article.svelte-m9e86z{margin-top:20px;margin-bottom:20px;width:210mm;height:296mm;-webkit-box-shadow:0 .5mm 2mm rgba(0,0,0,.3);box-shadow:0 .5mm 2mm rgba(0,0,0,.3);page-break-after:always;background-color:#fff5ee;padding:1rem}p.svelte-m9e86z{background-color:var(--main-color)}@media print{article.svelte-m9e86z{margin-top:0}}:root {
+  --main-color: red;
+  --header-color: black;
+  --beige: beige;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+html {
+  background-color: hsla(229, 34%, 42%, 1);
+}
+h2 {
+  margin-top:0.5rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+ul {
+  padding:0;
+}
+
+li { 
+  list-style: none;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  & :hover {
+    text-decoration: underline;
+  }
+}
+
+@media print {
+  body {
+    padding: 0;
+  }
+}li.svelte-7md4z3{list-style-type:disc;list-style-position:inside;margin-top:.5rem}section.svelte-r1trc4.svelte-r1trc4{border-style:solid;border-color:red}article.svelte-r1trc4.svelte-r1trc4{text-align:center}nav.svelte-r1trc4.svelte-r1trc4{margin:0;padding:0;background-color:#fff5ee;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}nav.svelte-r1trc4 li.svelte-r1trc4{margin:.2rem 0}nav.svelte-r1trc4 li .svelte-r1trc4:hover{color:#fff;background-color:#00f}h2.svelte-3gzzn0{text-align:center}h3.svelte-3gzzn0{--heading-margin:0.7rem;margin-top:var(--heading-margin);margin-bottom:var(--heading-margin)}h3.svelte-3gzzn0:last-of-type{margin-top:1.5rem}li.svelte-3gzzn0{font-size:1em;color:#00f}h1.svelte-1dy2au7{background-color:var(--beige);text-align:center;font-size:60px}ul.svelte-1fx2z4p.svelte-1fx2z4p{display:-webkit-box;display:-ms-flexbox;display:flex;background-color:#ff69b4}ul.svelte-1fx2z4p li.svelte-1fx2z4p{color:#faebd7;text-shadow:.2rem;font-size:2rem;margin:0,0,0,0}ul.svelte-1fx2z4p li.svelte-1fx2z4p:hover{color:#8a2be2}ul.column.svelte-1fx2z4p.svelte-1fx2z4p{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-line-pack:start;align-content:flex-start;float:left;padding:0 .75rem;margin-right:.5rem}
