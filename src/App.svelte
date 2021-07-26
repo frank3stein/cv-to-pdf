@@ -15,8 +15,15 @@
   p {
     background-color:var(--main-color);
   }
+
+  @media print {
+	article {
+		margin-top: 0;
+	}
+}
 </style>
 <script>
+  import "./global.css";
   import Header from './components/Header/Header.svelte';
   import Skills from './components/Skills/Skills.svelte';
   import Contact from './components/Contact/Contact.svelte';
@@ -24,15 +31,26 @@
   import Projects from './components/Projects/Projects.svelte';
   import Education from './components/Education/Education.svelte';
   import Certifications from './components/Certifications/Certifications.svelte';
-  import { name, skills, contact, workxp, projects, education, certifications } from './info.json';
   document.title = "Emil Martinov - CV";
+
+  const fetchData = (async () => {
+    let json = await fetch('./info.json')
+    return await json.json()
+  })();
 </script>
+
+{#await fetchData}
+	<p>...waiting</p>
+{:then {name, contact, skills, workxp, projects, education, certifications}}
 <article>
-  <Header name = {name}/>
-  <Contact contact = {contact}/>
-  <Skills skills = {skills}/>
-  <Workxp workxp = {workxp}/>
-  <Projects projects = {projects}/>
-  <Education education = {education}/>
-  <!-- <Certifications certifications = {certifications}/> -->
+  <Header {name} />
+  <Contact {contact} />
+  <Skills {skills}/>
+  <Workxp {workxp} />
+  <Projects {projects} />
+  <Education {education} />
+  <Certifications {certifications} />
 </article>
+{:catch error}
+	<p>An error occurred!</p>
+{/await}

@@ -27,7 +27,7 @@
         "text": [
           "Udacity is an online education platform which partners with companies like Google, Facebook, Github, Amazon and IBM to bring industry standard education programs to prepare candidates for the job market.", 
           
-          "Reviewed thousands of projects consistently rating high on  performance metrics, review rating (>4.9/5), avg project review turnaround time (<1hour/8hours).",
+          "Reviewed thousands of projects consistently rating high on  performance metrics, Net Project Feedback Score (98/100 in 2020),  avg project review turnaround time (<1hour/8hours).",
 
           "Resolved hundreds of issues on Javascript, React/Redux, AWS, assisting students on their learning experience teaching the what, how and why."
         ]
@@ -35,25 +35,25 @@
     ],
     "projects": [
       {
+        "title":"Would you Rather",
+        "link":"https://github.com/frank3stein/would-you-rather",
+        "text":"Implemented the game in React(Hooks) with Redux. Mocked asynchronous api. Users can login, create new polls and vote on them. Moreover, there is a leaderboard that is updated on each vote. "
+      }, 
+      {
+        "title":"Serverless Todo App",
+        "link":"https://github.com/frank3stein/serverless",
+        "text":"A react todo app. The backend is deployed using Serverless framework as Node.js on AWS Lambda. I implemented OAuth for authentication and DynamoDB for the database. Images are uploaded to S3 bucket with a presigned URL. Implemented warmup (reducing latency on cold start), request validation (reducing costs), canary deployment and xray. Please refer to readme for full functionality."
+      },
+      {
+           "title":"Refactor Monolith to Microservices",
+           "link":"https://github.com/frank3stein/microservices-walkthrough",
+           "text":"Refactored a monolith into microservices by leveraging docker containers and kubernetes cluster. The backend is seperated into 2 services, served by a reverseproxy for port 8080. Each service can scale independently through replica sets."
+         },
+      {
         "title":"CI/CD Pipeline",
         "link":"https://github.com/frank3stein/cicd-pipeline",
         "text":"CI/CD pipeline with Circle CI. Frontend is audited, updated and tested before infrastructure is built. The backend infratstructure is built on AWS and configured with ansible, monitored with Prometheus. After both environments are tested are prometed to production and the old stack is cleaned up."
-      },
-      {
-        "title":"Deploy ML-Microservice",
-        "link":"https://github.com/frank3stein/ml-microservice",
-        "text":"Machine learning microservice is tested and deployed using docker and kubernetes. I wrote bash scripts and makefile to make deployment easier."
-      },
-        {
-          "title":"Serverless Todo App",
-          "link":"https://github.com/frank3stein/serverless",
-          "text":"A react todo app. The backend is deployed using Serverless framework as Node.js on AWS Lambda. I implemented OAuth for authentication and DynamoDB for the database. Images are uploaded to S3 bucket with a presigned URL. Implemented warmup (reducing latency on cold start), request validation (reducing costs), canary deployment and xray. Please refer to readme for full functionality."
-        },
-     {
-          "title":"Refactor Monolith to Microservices",
-          "link":"https://github.com/frank3stein/microservices-walkthrough",
-          "text":"Refactored a monolith into microservices by leveraging docker containers and kubernetes cluster. The backend is seperated into 2 services, served by a reverseproxy for port 8080. Each service can scale independently through replica sets."
-        }
+      }
     ],
     "otherProjects":[
       {
