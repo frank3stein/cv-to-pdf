@@ -7,7 +7,6 @@ import css from 'rollup-plugin-css-only';
 import json from '@rollup/plugin-json';
 // import postcss from 'rollup-plugin-postcss';
 import sveltePreprocess from 'svelte-preprocess';
-import { postcss } from 'svelte-preprocess';
 import postCssImport from 'postcss-import';
 import cssEnv from 'postcss-preset-env';
 
@@ -43,20 +42,6 @@ export default {
 		file: 'public/build/bundle.js'
 	},
 	plugins: [
-		// postcss({
-		// 	plugins: [
-		// 		require('postcss-import')({}),
-		// 		require('postcss-preset-env')({
-		// 			// stage: 0,
-		// 			features: {
-		// 			"nesting-rules": true,
-		// 			"custom-properties": true
-		// 			},
-		// 			browsers: "last 2 versions"
-		// 		}),
-		// 		require('cssnano')()
-		// 	]
-		// }),
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production
@@ -68,8 +53,10 @@ export default {
 				// postcss: true
 				postcss: {
 					plugins: [
-						require('postcss-import')({}),
-						require('postcss-preset-env')({
+						// require('postcss-import')({}),
+						postCssImport(),
+						// require('postcss-preset-env')({
+						cssEnv({
 							// stage: 0,
 							features: {
 							"nesting-rules": true,
@@ -81,73 +68,6 @@ export default {
 					]
 				}
 			}),
-
-
-			// preprocess: sveltePreprocess({
-			// 	// postcss: true,
-			// 	postcss: { plugins: [postCssImport(), cssEnv({
-			// 		stage: 0,
-			// 		features: {
-			// 		  "nesting-rules": true,
-			// 		  "custom-properties": true
-			// 		},
-			// 		browsers: "last 2 versions"
-			// 	  })] },
-			// 	configFilePath: 'postcss.config.js'
-			//   }),
-
-			// working preprocess
-			// preprocess: {
-			// 	style: ({ content, attributes }) => {
-			// 		if (attributes.type !== 'text/postcss') {
-			// 			return;
-			// 		};
-				
-			// 		// Plugins List: 
-			// 		// https://github.com/postcss/postcss/blob/master/docs/plugins.md
-			// 		const plugins = [
-			// 			require('postcss-import'),
-			// 			require('postcss-preset-env')
-			// 		];
-			// 		return postcss(plugins)
-			// 			.process(content, { 
-			// 				from: 'src', 
-			// 				map: { inline: false } 
-			// 			})
-			// 			.then((result) => ({
-			// 				code: result.css.toString(),
-			// 				map: result.map.toString()
-			// 			}));
-			// 	}
-			// },
-
-			// preprocess:[
-			// 	postcss({
-			// 		plugins: [
-			// 			postCssImport(),
-			// 			cssEnv({
-			// 				// stage: 0,
-			// 				// features: {
-			// 				// 	"nesting-rules": true,
-			// 				// 	"custom-properties": true
-			// 				// },
-			// 				// browsers: "last 2 versions"
-			// 			}),
-			// 			// require('postcss-import')({}),
-			// 			// require('postcss-preset-env')({
-			// 			// 	// stage: 0,
-			// 			// 	features: {
-			// 			// 	"nesting-rules": true,
-			// 			// 	"custom-properties": true
-			// 			// 	},
-			// 			// 	browsers: "last 2 versions"
-			// 			// }),
-			// 			// require('cssnano')()
-			// 		].filter( plugin => plugin)
-			// 	})
-			// ]
-
-
 		}),
 
 

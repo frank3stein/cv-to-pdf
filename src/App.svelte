@@ -15,6 +15,12 @@
   p {
     background-color:var(--main-color);
   }
+
+  @media print {
+	article {
+		margin-top: 0;
+	}
+}
 </style>
 <script>
   import "./global.css";
@@ -25,9 +31,17 @@
   import Projects from './components/Projects/Projects.svelte';
   import Education from './components/Education/Education.svelte';
   import Certifications from './components/Certifications/Certifications.svelte';
-  import { name, skills, contact, workxp, projects, education, certifications } from './info.json';
   document.title = "Emil Martinov - CV";
+
+  const fetchData = (async () => {
+    let json = await fetch('./info.json')
+    return await json.json()
+  })();
 </script>
+
+{#await fetchData}
+	<p>...waiting</p>
+{:then {name, contact, skills, workxp, projects, education, certifications}}
 <article>
   <Header {name} />
   <Contact {contact} />
@@ -37,3 +51,6 @@
   <Education {education} />
   <Certifications {certifications} />
 </article>
+{:catch error}
+	<p>An error occurred!</p>
+{/await}
