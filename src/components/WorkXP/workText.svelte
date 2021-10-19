@@ -1,9 +1,11 @@
 <script>
-    export let text;
+  export let text;
 </script>
-<style>
-p {
-    margin-top: 2rem;
-}
-</style>
+
 <li>{text}</li>
+
+<style>
+  p {
+    margin-top: 2rem;
+  }
+</style>
